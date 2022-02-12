@@ -1,5 +1,5 @@
-# author:
-# date:
+# author:Sarah Buckenmeyer
+# date:02/11/2022
 # purpose: Discount
 
 # input
