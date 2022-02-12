@@ -5,7 +5,7 @@
 # input
 try:
     unit_price = input("enter unit price: ")
-    unit_price = int(unit_price)
+    unit_price = float(unit_price)
     try:
         quantity = input("enter quantity: ")
         quantity = int(quantity)
@@ -15,9 +15,9 @@ try:
 
             # calculate
             extended_price = unit_price * quantity
-            discount = extended_price + discount_percent / 100
+            discount = extended_price * discount_percent / 100
             total_price = extended_price - discount
-            free_shipping = total_price > 45
+            free_shipping = total_price >= 45
 
             # output
             print("Total price is ", total_price)
